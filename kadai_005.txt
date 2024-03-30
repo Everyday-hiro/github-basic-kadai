@@ -1,0 +1,32 @@
+PS C:\Users\pcklu\Kadai> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\pcklu\Kadai
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/03/30     23:24                git_challenge
+
+
+PS C:\Users\pcklu\Kadai> cd git_challenge
+PS C:\Users\pcklu\Kadai\git_challenge> echo "hello_world.txtを追加" > hello_world.txt
+PS C:\Users\pcklu\Kadai\git_challenge> echo "日本語訳を追記" >> hello_world.txt
+PS C:\Users\pcklu\Kadai\git_challenge> git add hello_world.txt
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\pcklu\Kadai\git_challenge> git init
+Initialized empty Git repository in C:/Users/pcklu/Kadai/git_challenge/.git/
+PS C:\Users\pcklu\Kadai\git_challenge> git add hello_world.txt
+PS C:\Users\pcklu\Kadai\git_challenge> git commit -m "hello_world.txtを追加" 
+[main (root-commit) d70482a] 繝輔ぃ繧､繝ｫ霑ｽ蜉
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\pcklu\Kadai\git_challenge> echo "hello_world.txtを追加" >> hello_world.txt 
+PS C:\Users\pcklu\Kadai\git_challenge> git add hello_world.txt 
+PS C:\Users\pcklu\Kadai\git_challenge> git commit -m "日本語訳を追記" 
+[main e9334f7] 譌･譛ｬ隱櫁ｨｳ繧定ｿｽ險
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\pcklu\Kadai\git_challenge> git log --oneline 
+e9334f7 (HEAD -> main) 日本語訳を追記
+d70482a hello_world.txtを追加
+PS C:\Users\pcklu\Kadai\git_challenge> 
